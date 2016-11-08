@@ -14,11 +14,13 @@
 	 	```
 
 	+ 纯 HTML 插值 : v-html
+	
 		```html
 	 	<p v-html="msg"></p>
 	 	```
 
 	+ 属性插值 ：v-bind
+	
 		``` html
 		<div v-bind:id="dynamocId"></div>
 		```
@@ -39,7 +41,7 @@
 		* 过滤器可以串联
 		* 过滤器是 JavaScript 函数
 
- - # 指令 Directives
+- # 指令 Directives
 	> 指令属性的值预期是单一 JavaScript表达式,当其表达式的值改变时，相应的将某些行为应用到DOM上。
     
 	
@@ -47,22 +49,22 @@
 	+ 参数
 	    > 一些指令能接受一个参数，在指令后以冒号指明。
 
-	      * v-bind 指令用来更新 HTML 属性
+		* v-bind 指令用来更新 HTML 属性
 	      
 		```html
 		<a v-bind:href="url">alisa</a>
 		```
 		
-	      * v-on  用于监听 DOM 事件
+		* v-on  用于监听 DOM 事件
 	      
 		```html
 		<a href="" v-on:click="doSomething">alisa</a>
 		```
 
-	 + 修饰符  Modifiers
+	+ 修饰符  Modifiers
 		> 半角句号 . 指明的特殊后缀,指出一个指定应该以特殊方式绑定。
 		
-	 + 缩写
-	    * v-bind 为 :
-	    * v-on   为 @
+	+ 缩写
+		* v-bind 为 :
+		* v-on   为 @
 
