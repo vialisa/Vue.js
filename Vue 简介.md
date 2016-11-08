@@ -52,8 +52,10 @@
 		       seen:true
 		    }
 		});
-
+		```
+		
 	+ v-for 绑定数据到数据来渲染一个列表
+	
 		```html
 		<div id="demo">
 		<ol>
@@ -73,6 +75,7 @@
              }
 		});
 		```
+		
 		*vm.items.push(message:"new item") 列表新增一项*
 - ## 处理用户输入
 	+ v-on 可以绑定一个监听事件，用于调用 Vue 实例中定义的方法。
