@@ -85,7 +85,7 @@
 		
 	  * 数组语法里可使用多个数据对象，也可与数组混用。
 	  
-	  `v-bind:class = "[ {active:isA} , isT ]" `
+	     `v-bind:class = "[ {active:isA} , isT ]" `
 	  
 - # 绑定内联样式
   + 对象语法
