@@ -42,6 +42,7 @@
 
 - ## 计算属性 VS $watch
 	+ $watch  当一些数据需要根据其他数据变化时使用
+	
 		```html
 		<p>{{ fullName }}</p>
 		<input type="text" v-model="firstName">
@@ -65,7 +66,9 @@
              }                
         });
 		```
+		
 	+ 以上js代码  可用下面 computed 代替
+	
 		```javascript
 		var vm = new Vue ({
              el:"#demo",
@@ -80,10 +83,12 @@
              }                
         });
 		```	
+		
 	+ 也可以用 $watch 代替
+	
 		```javascript
 		var vm = new Vue ({
-			el:"#demo",
+		    el:"#demo",
 			data: {
 				firstName:"vi",
 				lastName:"alisa",
@@ -97,6 +102,7 @@
 			vm.fullName = vm.lastName + ' ' + newVal; 
 		}),
 		```
+		
 - ## 观察watchers
 	+ 在数据变化响应时，执行异步操作或昂贵操作时，这是很有用的。
 	+ 深入理解
