@@ -31,7 +31,7 @@
    var data = {counter: 0 }
    
    Vue.component('simple-counter',{
-       template:'<button v-on:click="counter += 1">counter</button>
+       template:'<button v-on:click="counter += 1">counter</button>',
 
        data: function() {
            return {
