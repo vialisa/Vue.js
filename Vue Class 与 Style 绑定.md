@@ -89,10 +89,10 @@
 	  
 - # 绑定内联样式
   + 对象语法
-    > CSS 属性名可以用驼峰式 或 短横分隔符。
+    > CSS 属性名可以用驼峰式 或 短横分隔符，对象内的值不能用短横分隔符。
 
 	```HTML
-	<div v-bind:style=" { color:activeColor, fontSize:fongSize + 'px' }">alisadiv> 
+	<div v-bind:style=" { color:activeColor, fontSize:fongSize + 'px' }">alisa</div> 
 	```
 	
 	```JavaScript
