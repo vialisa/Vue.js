@@ -1,0 +1,32 @@
+# Vue 响应式原理
+
+- 追踪变化
+  + getter / setter
+  + watcher
+
+- 注意事项
+  + Vue 无法检测到对象属性的添加或者删除
+  + Vue 不允许动态添加新的根级响应式属性到已存在的实例中。
+  + 可通过` Vue.set(object,key,value) `方法添加响应式属性到一个嵌套的对象中
+
+    ```html
+    <p>{{ obj.a }}</p>
+    <input type="text" v-model="obj.a">
+    ```
+
+    ```JavaScript
+    data: {
+    obj: {}
+    }
+
+    vm.$set(vm.obj,'a',1);
+    // Vue.set(vm.obj,'a',1);
+    ```
+
+  + 可同时添加多个属性
+
+    ```JavaScript
+    vm.obj = obj.assign({},vm.obj,{b: 1,c: 2})
+    ```
+
+

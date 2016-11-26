@@ -46,11 +46,11 @@ methods: {
 
 - 事件修饰符
   > 由点表示的指令后缀来调用修饰符
-  
+
   + .stop
   + .prevent
   + .captrue
-  + .self 
+  + .self
 
 - 按键修饰符
   > 监听常见的键值

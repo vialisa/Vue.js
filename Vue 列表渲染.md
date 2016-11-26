@@ -1,4 +1,4 @@
-.# 列表渲染
+# 列表渲染
 - # v-for
 
   > 根据一组数组的选项列表进行渲染 可以用 of 代替 in 作为分隔符。
@@ -22,7 +22,7 @@
               { message:"HTML" },
               { message:"JavaScript" }
           ]
-      }		  
+      }
   });
   ```
 
@@ -98,7 +98,7 @@
 	{{ index }}. {{ key }} : {{ value }}
 	</li>
 	```
-   
+
    + 整数迭代 v-for
 
    ```html

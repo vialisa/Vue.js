@@ -4,7 +4,7 @@
 	> Vue.js 不支持 IE8 及其以下版本, Vue.js 支持所有兼容ECMAScript 5 的浏览器。
 
 - ## 目标
-	> 通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件 
+	> 通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件
 
 - ## 声明式渲染
 	> 核心是允许采用简洁的模板语法来声明式的将数据渲染进DOM的系统
@@ -53,9 +53,9 @@
 		    }
 		});
 		```
-		
+
 	+ v-for 绑定数据到数据来渲染一个列表
-	
+
 		```html
 		<div id="demo">
 		<ol>
@@ -75,7 +75,7 @@
              }
 		});
 		```
-		
+
 		*vm.items.push(message:"new item") 列表新增一项*
 - ## 处理用户输入
 	+ v-on 可以绑定一个监听事件，用于调用 Vue 实例中定义的方法。
@@ -94,7 +94,7 @@
 		    },
 		    methods: {
 		        reversedMsg: function() {
-                    this.msg = this.msg.split('').reverse().join('');	       
+                    this.msg = this.msg.split('').reverse().join('');
                 }
             }
 		});
@@ -124,7 +124,7 @@
   })
   ```
 	+ 选项对象可包含数据、模板、挂载元素、方法、生命周期钩子等选项
-	+ 所有的Vue.js 组件其实都是被扩展的 Vue 实例。	
+	+ 所有的Vue.js 组件其实都是被扩展的 Vue 实例。
 
 - ## 属性与方法
 	+ 每个Vue 实例都会代理其 data 对象性里所有的属性
