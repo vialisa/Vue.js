@@ -47,7 +47,7 @@
 	```html
 	<input type="radio" id="vivi" v-model= "radioName" value="vivi">
 	<label for= "vivi"> Vivi </label>
-	<input type="radio" id="cici" v-model= "radioName" value="cici>
+	<input type="radio" id="cici" v-model= "radioName" value="cici">
 	<label for="cici"> Cici </label>
 
 	<p>Radio name: {{ radioName }} </p>
